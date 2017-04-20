@@ -25,7 +25,7 @@ HtmlHeader($appName);
 
 <div class="searchbox center">
 <center>
-<form id="fq" action="search.php" method="post" enctype="application/x-www-form-urlencoded">
+<form id="fq" action="search.php" method="get">
 <div class="big_text"></div>
 <input type="text" name="q" id="query" class="big_text_input">
 <input type="submit" value="Search">

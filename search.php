@@ -40,7 +40,7 @@ if (isset($e_q)) {
 	<div class="block_left">
 		<div class="app_name"><a href="index.php" id="no"><?php echo $appName; ?></a></div>
 		<div class="<?php echo $form_classes; ?>">
-			<form action="search.php" method="post" enctype="application/x-www-form-urlencoded">
+			<form action="search.php" method="get">
 			<div class="spacer">
 			<input type="text" name="q" id="query" class="big_text_input" value="<?php echo $re_input; ?>">
 			<input type="submit" value="Search">
