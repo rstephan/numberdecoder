@@ -17,7 +17,9 @@ class mac_oui extends SchemaBase
 
 	function __construct()
 	{
-		$this->mManuf = new Manuf();
+		global $cfg;
+
+		$this->mManuf = new Manuf($cfg['mac_oui']['manuf']);
 	}
 
 	function GetManuf($mac)

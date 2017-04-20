@@ -11,13 +11,13 @@ class Manuf
 	private $mIsLoaded;
 	private $mFilename;
 
-	function __construct()
+	function __construct($filename)
 	{
 		global $cfg;
 
 		$this->mMap = array();
 		$this->mIsLoaded = FALSE;
-		$this->mFilename = $cfg['mac_oui']['manuf'];
+		$this->mFilename = $filename;
 	}
 
 	function StrToMac($str, &$m)
