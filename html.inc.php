@@ -16,7 +16,7 @@ function HtmlHeader($title, $styleDir = "")
 	echo "<!DOCTYPE html>\n";
 	echo "<html><head>\n<title>$title</title>\n\n";
 	echo "<!-- https://github.com/rstephan/numberdecoder -->\n\n";
-	echo "<meta charset=\"utf-8\">";
+	echo "<meta charset=\"utf-8\">\n";
 	echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
 	echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . $styleDir . "template/$style/style.css\"></head>\n";
 }

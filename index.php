@@ -5,14 +5,7 @@
 @author Stephan Ruloff
 */
 
-require_once("html.inc.php");
-
-if (isset($_POST)) {
-	reset($_POST);
-	foreach ($_POST as $k=>$elem) {
-		${"e_$k"} = $elem;
-	}
-}
+require_once "html.inc.php";
 
 HtmlHeader($appName);
 
@@ -25,7 +18,7 @@ HtmlHeader($appName);
 
 <div class="searchbox center">
 <center>
-<form id="fq" action="search.php" method="get">
+<form name="fq" action="search.php" method="get">
 <div class="big_text"></div>
 <input type="text" name="q" id="query" class="big_text_input">
 <input type="submit" value="Search">
